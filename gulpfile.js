@@ -21,16 +21,6 @@ async function styles() {
         .pipe(livereload())
 }
 
-// gulp.task('html', function () {
-//     return gulp.src('stage/html/*.pug')
-//         .pipe(pug({
-//             pretty: true
-//         }))
-//         .pipe(gulp.dest('dist'))
-//         .pipe(livereload())
-// });
-
-
 async function html() {
     return gulp.src('stage/html/**/*.pug')
         .pipe(pug({
@@ -58,5 +48,7 @@ async function watch() {
 
 exports.default = gulp.series(
     html,
+    styles,
+    js,
     watch
 )
