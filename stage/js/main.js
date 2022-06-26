@@ -4,5 +4,3 @@ $(function () {
         $('.content-area, .sidebar').toggleClass('no-sidebar');
     });
 });
-var x = 0;  
-var c = 0;       
