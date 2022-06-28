@@ -5,12 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/fontawesome.css">
   </head>
   <body>
     <div class="page home-page">
-      <div class="sidebar">sidebar</div>
+      <div class="sidebar">
+        <div class="logo-area text-center">Kou</div>
+        <ul class="links-area list-unstyled">
+          <li><a href="#">Homepage</a></li>
+          <li><a class="toggle-submenu" href="#">
+               Forms <i class="fa fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">text </a></li>
+              <li><a href="#">checkbox </a></li>
+              <li><a href="#">radio</a></li>
+              <li><a href="#">input</a></li>
+              <li><a href="#">forms</a></li>
+            </ul>
+          </li>
+          <li><a class="toggle-submenu" href="#">Misc<i class="fa fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Loading</a></li>
+              <li><a href="#">Breadcrumbs</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <div class="content-area">
         <div class="header"> <i class="fa fa-exchange fa-lg toggle-sidebar"></i></div>
         <div class="content">
@@ -19,6 +41,7 @@
       </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"> </script>
+    <script src="js/bootstrap.bundle.min.js"> </script>
     <script src="js/main.min-min.js"> </script>
   </body>
 </html>

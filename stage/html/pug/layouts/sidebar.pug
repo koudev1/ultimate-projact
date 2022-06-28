@@ -1,1 +1,21 @@
-.sidebar sidebar
+.sidebar
+    .logo-area.text-center Kou
+    ul.links-area.list-unstyled
+        li: a(href="#") Homepage
+        li
+            a.toggle-submenu(href="#") 
+                | Forms 
+                i.fa.fa-angle-right
+            ul.child-links.list-unstyled
+                li: a(href="#") text 
+                li: a(href="#") checkbox 
+                li: a(href="#") radio
+                li: a(href="#") input
+                li: a(href="#") forms
+        li
+            a.toggle-submenu(href="#")
+                | Misc
+                i.fa.fa-angle-right
+            ul.child-links.list-unstyled
+                li: a(href="#") Loading
+                li: a(href="#") Breadcrumbs
