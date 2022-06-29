@@ -1,2 +1,32 @@
 .header 
     i.fa.fa-exchange.fa-lg.toggle-sidebar
+    .dropdown.notifications-container
+        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown' aria-expanded='false')
+        .dropdown-menu.dropdown-notifications(aria-labelledby='notifications')
+            .noti-head
+                | Notifications
+                span 50
+            .noti-content 
+                ul.list-unstyled
+                    li 
+                        i.fa.fa-exclamation.fa-lg
+                        | There is a problem here
+                    li 
+                        i.fa.fa-exclamation.fa-lg
+                        | There is a problem here
+                    li 
+                        i.fa.fa-exclamation.fa-lg
+                        | There is a problem here
+                    li 
+                        i.fa.fa-exclamation.fa-lg
+                        | There is a problem here
+                    li 
+                        i.fa.fa-exclamation.fa-lg
+                        | There is a problem here
+                    li 
+                        i.fa.fa-exclamation.fa-lg
+                        | There is a problem here
+                    li 
+                        i.fa.fa-exclamation.fa-lg 
+                        | There is a problem here
+            .noti-foot: a(href="#") View All Notifications

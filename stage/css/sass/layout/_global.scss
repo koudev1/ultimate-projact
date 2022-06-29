@@ -2,7 +2,9 @@
     box-sizing: border-box;
 }
 
-body {}
+body {
+    font-family: 'Tajawal', sans-serif;
+}
 
 .page {
     min-height: 100vh;
@@ -10,7 +12,7 @@ body {}
     .content-area {
         background: #f2f1f6;
         width: calc(100% - 250px);
-        min-height: 100%vh;
+        min-height: 100vh;
         transition: .3s;
         will-change: width;
         float: right;
