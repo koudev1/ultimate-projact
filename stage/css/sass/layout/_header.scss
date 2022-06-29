@@ -2,6 +2,15 @@
     background: #fff;
     padding: 20px;
 
+    .header-icon {
+        background: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        color: #888;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
     .toggle-sidebar {
         cursor: pointer;
     }
@@ -9,15 +18,6 @@
     .notifications-container {
         display: inline-block;
         margin-left: 20px;
-
-        .toggle-notifications {
-            background: #fff;
-            padding: 10px;
-            border-radius: 50%;
-            color: #888;
-            cursor: pointer;
-
-        }
 
         .dropdown-notifications {
             min-width: 600px;
@@ -49,10 +49,12 @@
 
             .noti-content {
                 padding: 20px;
-                ul{
-                    li{
+
+                ul {
+                    li {
                         padding: 10px;
-                        i{
+
+                        i {
                             background: #eee;
                             padding: 10px;
                             margin-right: 10px;

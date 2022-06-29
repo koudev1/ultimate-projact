@@ -1,7 +1,7 @@
 .header 
     i.fa.fa-exchange.fa-lg.toggle-sidebar
     .dropdown.notifications-container
-        i.fa.fa-bell.fa-lg.toggle-notifications#notifications(data-toggle='dropdown' aria-expanded='false')
+        i.fa.fa-bell.fa-lg.header-icon.toggle-notifications#notifications(data-toggle='dropdown' aria-expanded='false')
         .dropdown-menu.dropdown-notifications(aria-labelledby='notifications')
             .noti-head
                 | Notifications
@@ -30,3 +30,4 @@
                         i.fa.fa-exclamation.fa-lg 
                         | There is a problem here
             .noti-foot: a(href="#") View All Notifications
+    i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
