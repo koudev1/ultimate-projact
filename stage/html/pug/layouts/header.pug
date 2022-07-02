@@ -31,3 +31,19 @@
                         | There is a problem here
             .noti-foot: a(href="#") View All Notifications
     i.fa.fa-expand.fa-lg.toggle-fullscreen.header-icon
+    .dropdown.user-container
+        .username#usermenu(data-toggle='dropdown' aria-expanded='false')
+            img.avatar.rounded-circle(src="img/myPhoto.jpg", alt="User Avatar")
+            span.user Ahmad Farouh
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-user.dropdown-menu-right(aria-labelledby='usermenu')
+            ul.user-list.list-unstyled
+                li: a.link-box(href="") 
+                    i.fa.fa-user
+                    span My Profile
+                li: a.link-box(href="") 
+                    i.fa.fa-gear
+                    span Settings
+                li: a.link-box(href="") 
+                    i.fa.fa-power-off
+                    span Logout
