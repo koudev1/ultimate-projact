@@ -3,11 +3,13 @@ $(function () {
     $('.toggle-sidebar').on('click', function () {
         $('.content-area, .sidebar').toggleClass('no-sidebar');
     });
+
     // Toggle Submenu
     $('.toggle-submenu').on('click', function () {
         $(this).find('.fa-angle-right').toggleClass('down');
         $(this).next('.child-links').slideToggle();
     });
+
     // Open / Close Fullscreen
     $('.toggle-fullscreen').on('click', function () {
         $(this).toggleClass('full-screen');
@@ -17,8 +19,24 @@ $(function () {
             closeFullscreen()
         }
     });
+
+    // Open / Close Fullscreen
+    $('.toggle-settings').on('click', function () {
+        $(this).find('i').toggleClass('fa-spin');
+        $(this).parent().toggleClass('hide-settings');
+    });
+
+    // Open / Close Fullscreen
+    var themesclasses = [];
+    $('.color-options li').each(function () {
+        themesclasses.push($(this).data('theme'));
+    });
+    $('.color-options li').on('click', function() {
+        $(this).addClass('active').siblings().removeClass('active')
+        $('body').removeClass(themesclasses.join(' ')).addClass($(this).data('theme'));
+    });
 });
- 
+
 
 var elem = document.documentElement;
 
