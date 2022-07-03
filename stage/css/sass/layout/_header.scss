@@ -13,6 +13,9 @@
 
     .toggle-sidebar {
         cursor: pointer;
+        &hover{
+            color: $flatPurple;
+        }
     }
 
     .notifications-container {

@@ -2,16 +2,37 @@ $themes: (green-theme: (color: #27ae60),
     blue-theme: (color: #2980b9),
     red-theme: (color: #c0392b),
     purple-theme: (color: #8e44ad),
+    orange-theme: (color: #f39c12),
 );
 
 @each $theme,
 $map in $themes {
 
     .#{$theme} {
+        $color: map-get($map, color);
 
         .page .page-head .page-title {
-            color: map-get($map, color);
+            color: $color;
+        }
 
+        .toggle-sidebar:hover {
+            color: $color;
+        }
+
+        .toggle-notifications:hover {
+            color: $color;
+        }
+
+        .toggle-fullscreen:hover {
+            color: $color;
+        }
+
+        .header .user-container .dropdown-user .user-list li .link-box i {
+            color: $color;
+        }
+
+        .page .sidebar .links-area>li>a.active::before {
+            border-color: $color;
         }
     }
 
