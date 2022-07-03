@@ -3,11 +3,15 @@
         i.fa.fa-gear.fa-lg
     .settings-content.text-center
         .option-box.color-options
-            - var themes = ['green-theme', 'blue-theme', 'red-theme', 'purple-theme']
             h4.option-title Color Option
+            - var themes = ['green-theme', 'blue-theme', 'red-theme', 'purple-theme', 'orange-theme'] 
             ul.list-unstyled
                 each theme in themes 
                     li(data-theme=theme)
         .option-box.font-options
             h4.option-title Font Option
+            - var fonts = ['Tajawal', 'Arima', 'Lato', 'Open', 'Source'] 
+            select.font-control
+                each font in fonts 
+                    option(value=font)=font + ' Font'
         .option-box

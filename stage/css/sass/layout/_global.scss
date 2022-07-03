@@ -4,6 +4,21 @@
 
 body {
     font-family: 'Tajawal', sans-serif;
+    &.Tajawal{
+        font-family: 'Tajawal', sans-serif;
+    }
+    &.Arima{
+        font-family: 'Arima', cursive;
+    }
+    &.Lato{
+        font-family: 'Lato', sans-serif;
+    }
+    &.Open{
+        font-family: 'Open Sans', sans-serif;
+    }
+    &.Source{
+        font-family: 'Source Sans Pro', sans-serif;
+    }
 }
 
 .page {

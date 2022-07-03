@@ -27,13 +27,20 @@ $(function () {
     });
 
     // Open / Close Fullscreen
-    var themesclasses = [];
+    let themesclasses = [];
     $('.color-options li').each(function () {
         themesclasses.push($(this).data('theme'));
     });
-    $('.color-options li').on('click', function() {
+    $('.color-options li').on('click', function () {
         $(this).addClass('active').siblings().removeClass('active')
         $('body').removeClass(themesclasses.join(' ')).addClass($(this).data('theme'));
+    });
+    let fontsclasses = [];
+    $('.font-options select option').each(function () {
+        fontsclasses.push($(this).val());
+    });
+    $('.font-options select').on('change', function () {
+        $('body').removeClass(fontsclasses.join(' ')).addClass($(this).find('option:selected').val());
     });
 });
 
